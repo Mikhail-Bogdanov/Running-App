@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="6dp"
+    android:background="@color/md_blue_400"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/ll_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/ll_statistics">
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_statistics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="@+id/ll_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tv_avgSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:layout_margin="3dp"
+            android:textSize="12sp"
+            android:text="5.9"/>
+
+        <TextView
+            android:id="@+id/tv_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:layout_margin="2dp"
+            android:textSize="14sp"
+            android:text="10273"/>
+
+        <TextView
+            android:id="@+id/tv_timeInMillis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:layout_margin="2dp"
+            android:textSize="12sp"
+            android:text="TEST"/>
+
+        <TextView
+            android:id="@+id/tv_caloriesBurned"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:layout_margin="2dp"
+            android:textSize="14sp"
+            android:text="303"/>
+
+        <TextView
+            android:id="@+id/tv_timestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:layout_margin="2dp"
+            android:textSize="12sp"
+            android:text="05.06.21"/>
+
+    </LinearLayout>
+
+</LinearLayout>
